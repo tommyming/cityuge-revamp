@@ -109,12 +109,12 @@
       </div>
     </div>
     <!--The Features session-->
-    <div class="bg">
+    <div class="feature-bg">
       <div class="element-wrap">
         <v-container>
-          <v-col cols="12">
+          <v-col>
             <h1 class="word-color"> Features </h1>
-            <v-col cols="12" class="d-inline-flex">
+            <v-col class="d-inline-flex" cols="12">
               <v-col cols="4">
                 <v-card color="default" class="ml-auto">
                   <v-img
@@ -155,212 +155,223 @@
     </div>
     <!-- Most Viewed GE Courses-->
     <div>
-      <v-container>
-        <v-col>
+      <div class="element-wrap">
+        <v-container>
           <v-col>
-            <h1 class="word-color">Most Viewed GE Courses</h1>
-          </v-col>
-          <v-col cols="12" class="d-flex">
-            <v-col cols="4">
-              <v-simple-table>
-                <thead class="grey">
-                <tr>
-                  <th>Rank</th>
-                  <th></th>
-                  <th class="text-right">Views</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>GE 1234 Introduction to Psychology</td>
-                  <td class="text-right">9999</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>GE 2354 Introduction to Presentation</td>
-                  <td class="text-right">9999</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>GE 1234 Introduction to Apple Products</td>
-                  <td class="text-right">9999</td>
-                </tr>
-                </tbody>
-              </v-simple-table>
+            <v-col>
+              <h1 class="word-color">Most Viewed GE Courses</h1>
             </v-col>
-            <v-col cols="8">
-              <v-simple-table>
-                <thead class="grey">
-                <tr>
-                  <th>Comments</th>
-                </tr>
-                </thead>
-                <v-hover>
+            <v-col cols="12" class="d-flex">
+              <v-col cols="4">
+                <v-simple-table>
+                  <thead class="grey">
+                  <tr>
+                    <th>Rank</th>
+                    <th></th>
+                    <th class="text-right">Views</th>
+                  </tr>
+                  </thead>
                   <tbody>
                   <tr>
-                    <td>This is a layout comment.</td>
+                    <td>1</td>
+                    <td>GE 1234 Introduction to Psychology</td>
+                    <td class="text-right">9999</td>
                   </tr>
                   <tr>
-                    <td>This is a layout comment.</td>
+                    <td>2</td>
+                    <td>GE 2354 Introduction to Presentation</td>
+                    <td class="text-right">9999</td>
                   </tr>
                   <tr>
-                    <td>This is a layout comment.</td>
+                    <td>3</td>
+                    <td>GE 1234 Introduction to Apple Products</td>
+                    <td class="text-right">9999</td>
                   </tr>
                   </tbody>
-                </v-hover>
-              </v-simple-table>
+                </v-simple-table>
+              </v-col>
+              <v-col cols="8">
+                <v-simple-table>
+                  <thead class="grey">
+                  <tr>
+                    <th>Comments</th>
+                  </tr>
+                  </thead>
+                  <v-hover>
+                    <tbody>
+                    <tr>
+                      <td>This is a layout comment.</td>
+                    </tr>
+                    <tr>
+                      <td>This is a layout comment.</td>
+                    </tr>
+                    <tr>
+                      <td>This is a layout comment.</td>
+                    </tr>
+                    </tbody>
+                  </v-hover>
+                </v-simple-table>
+              </v-col>
             </v-col>
           </v-col>
-        </v-col>
-      </v-container>
+        </v-container>
+      </div>
     </div>
     <!--      Comments section-->
-    <div>
-      <v-container>
-        <v-col cols="12">
-          <v-col>
-            <h1 class="word-color">Comments</h1>
+    <div class="cm-color">
+      <div class="element-wrap">
+        <v-container>
+          <v-col cols="12">
+            <v-col>
+              <h1 class="word-color">Comments</h1>
+            </v-col>
+            <!-- The whole part within the v-card will be generated based on the comments read from the database later on, element will be changed on full implement build. -->
+            <v-card outlined class="px-auto">
+              <v-card-text class="text-center px-14">
+                -- The Course provides subtle information on the subject psychology, while the text is filling up here,
+                I
+                hope it can make sure that
+                the whole thing works completely fine within the whole process, which looks nice within the whole thing.
+              </v-card-text>
+              <v-card-subtitle class="text-right">GE1234 Introduction to Psychology</v-card-subtitle>
+            </v-card>
           </v-col>
-          <!-- The whole part within the v-card will be generated based on the comments read from the database later on, element will be changed on full implement build. -->
-          <v-card outlined class="px-auto">
-            <v-card-text class="text-center px-14">
-              -- The Course provides subtle information on the subject psychology, while the text is filling up here, I
-              hope it can make sure that
-              the whole thing works completely fine within the whole process, which looks nice within the whole thing.
-            </v-card-text>
-            <v-card-subtitle class="text-right">GE1234 Introduction to Psychology</v-card-subtitle>
-          </v-card>
-        </v-col>
-      </v-container>
+        </v-container>
+      </div>
     </div>
     <!--      Links Section-->
     <div>
-      <v-container>
-        <v-col class="bg">
-          <v-col>
-            <h1 class="word-color">Links</h1>
+      <div class="element-wrap">
+        <v-container>
+          <v-col class="bg">
+            <v-col>
+              <h1 class="word-color">Links</h1>
+            </v-col>
+            <v-col class="d-inline-flex text-center" cols="12">
+              <v-col cols="4">
+                <v-btn icon href="https://cityusu.hk" target="_blank" class="link-button">
+                  CITYUSU
+                </v-btn>
+              </v-col>
+              <v-col cols="4">
+                <v-btn icon href="https://cityusu.hk" target="_blank" class="link-button">
+                  CITYUSU-IG
+                </v-btn>
+              </v-col>
+              <v-col cols="4">
+                <v-btn icon href="https://cityusu.hk" target="_blank" class="link-button">
+                  CITYUSU-FB
+                </v-btn>
+              </v-col>
+            </v-col>
           </v-col>
-          <v-col class="d-inline-flex text-center" cols="12">
-            <v-col cols="4">
-              <v-btn icon href="https://cityusu.hk" target="_blank" class="link-button">
-                CITYUSU
-              </v-btn>
-            </v-col>
-            <v-col cols="4">
-              <v-btn icon href="https://cityusu.hk" target="_blank" class="link-button">
-                CITYUSU-IG
-              </v-btn>
-            </v-col>
-            <v-col cols="4">
-              <v-btn icon href="https://cityusu.hk" target="_blank" class="link-button">
-                CITYUSU-FB
-              </v-btn>
-            </v-col>
-          </v-col>
-        </v-col>
-      </v-container>
+        </v-container>
+      </div>
     </div>
     <!--      Credits-->
-    <div>
-      <v-container>
-        <v-row class="bg-red">
-          <v-col cols="18">
-            <v-row class="my-3">
-              <v-col cols=18>
-                <v-col>
-                  <v-img
-                      :src="require('../assets/LOGO+TEXT_monoPurple.svg')"
-                      class=""
-                      contain
-                      height="50px"
-                      width="auto"
-                  />
+    <div class="bg-red">
+      <div class="element-wrap">
+        <v-container>
+          <v-row>
+            <v-col cols="18">
+              <v-row class="my-3">
+                <v-col cols=18>
+                  <v-col>
+                    <v-img
+                        :src="require('../assets/LOGO+TEXT_monoPurple.svg')"
+                        class=""
+                        contain
+                        height="50px"
+                        width="auto"
+                    />
+                  </v-col>
+                  <v-col>
+                    <v-card class="px-auto" color="#682045" elevation="0">
+                      <v-card-text class="word-white">
+                        本網站是以即時上載留言的方式運作，所有資料僅供參考，並不構成任何推薦、保證或協議。
+                        我們對所有留言的真實性、完整性及立場等，不負任何法律責任。
+                        本網站與香港城市大學 (City University of Hong Kong, CityU) 並無任何關連。
+                      </v-card-text>
+                    </v-card>
+                  </v-col>
+                  <v-col>
+                    <p class="text-right word-white">Version 2.0</p>
+                  </v-col>
                 </v-col>
-                <v-col>
-                  <v-card class="px-auto" color="#682045" elevation="0">
-                    <v-card-text class="word-white">
-                      本網站是以即時上載留言的方式運作，所有資料僅供參考，並不構成任何推薦、保證或協議。
-                      我們對所有留言的真實性、完整性及立場等，不負任何法律責任。
-                      本網站與香港城市大學 (City University of Hong Kong, CityU) 並無任何關連。
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col>
-                  <p class="text-right word-white">Version 2.0</p>
-                </v-col>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-container>
+              </v-row>
+            </v-col>
+          </v-row>
+        </v-container>
+      </div>
     </div>
     <!--      Bottom Bar-->
-    <div>
-      <v-container>
-        <v-bottom-navigation class="grey d-flex" elevation="0">
-          <v-col cols="18" class="d-inline-flex">
-            <v-col cols="6">
-              <v-row>
-                <v-col> About Us</v-col>
-                <v-col> Contact Us</v-col>
-                <v-col> Development Log</v-col>
-              </v-row>
+    <div class="grey">
+      <div class="element-wrap">
+        <v-container>
+          <v-row class="d-flex" elevation="0">
+            <v-col cols="18" class="d-inline-flex">
+              <v-col cols="6">
+                <v-row>
+                  <v-col> About Us</v-col>
+                  <v-col> Contact Us</v-col>
+                  <v-col> Development Log</v-col>
+                </v-row>
+              </v-col>
+              <v-spacer></v-spacer>
+              <v-col cols="6">
+                <v-row dense>
+                  <v-col><p>Find us more in:</p></v-col>
+                  <v-col>
+                    <v-img
+                        :src="require('../assets/img_InstagramLOGO.svg')"
+                        class="bg-color"
+                        contain
+                        height="20px"
+                        width="20px"
+                    />
+                  </v-col>
+                  <v-col>
+                    <v-img
+                        :src="require('../assets/img_FacebookLOGO.svg')"
+                        class="bg-color"
+                        contain
+                        height="20px"
+                        width="20px"
+                    />
+                  </v-col>
+                  <v-col>
+                    <v-img
+                        :src="require('../assets/img_LinkedinLOGO.svg')"
+                        class="bg-color"
+                        contain
+                        height="20px"
+                        width="20px"
+                    />
+                  </v-col>
+                  <v-col>
+                    <v-img
+                        :src="require('../assets/img_TwitterLOGO.svg')"
+                        class="bg-color"
+                        contain
+                        height="20px"
+                        width="20px"
+                    />
+                  </v-col>
+                  <v-col>
+                    <v-img
+                        :src="require('../assets/img_TelegramLOGO.svg')"
+                        class="bg-color"
+                        contain
+                        height="20px"
+                        width="20px"
+                    />
+                  </v-col>
+                </v-row>
+              </v-col>
             </v-col>
-            <v-spacer></v-spacer>
-            <v-col cols="6">
-              <v-row dense>
-                <v-col><p>Find us more in:</p></v-col>
-                <v-col>
-                  <v-img
-                      :src="require('../assets/img_InstagramLOGO.svg')"
-                      class="bg-color"
-                      contain
-                      height="20px"
-                      width="20px"
-                  />
-                </v-col>
-                <v-col>
-                  <v-img
-                      :src="require('../assets/img_FacebookLOGO.svg')"
-                      class="bg-color"
-                      contain
-                      height="20px"
-                      width="20px"
-                  />
-                </v-col>
-                <v-col>
-                  <v-img
-                      :src="require('../assets/img_LinkedinLOGO.svg')"
-                      class="bg-color"
-                      contain
-                      height="20px"
-                      width="20px"
-                  />
-                </v-col>
-                <v-col>
-                  <v-img
-                      :src="require('../assets/img_TwitterLOGO.svg')"
-                      class="bg-color"
-                      contain
-                      height="20px"
-                      width="20px"
-                  />
-                </v-col>
-                <v-col>
-                  <v-img
-                      :src="require('../assets/img_TelegramLOGO.svg')"
-                      class="bg-color"
-                      contain
-                      height="20px"
-                      width="20px"
-                  />
-                </v-col>
-              </v-row>
-            </v-col>
-          </v-col>
-        </v-bottom-navigation>
-      </v-container>
+          </v-row>
+        </v-container>
+      </div>
     </div>
   </div>
 </template>
@@ -395,12 +406,17 @@ body {
   background-size: contain;
 }
 
-.bg {
+.feature-bg {
   background: #FFE8EE;
 }
 
 .bg-red {
   background: #682045;
+}
+
+.cm-color {
+  background: #F8F8F8;
+
 }
 
 .bg-color {
